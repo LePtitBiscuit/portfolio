@@ -14,6 +14,6 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ['www.andyg.fr'],
+    allowedHosts: ['www.andyg.fr', 'andyg.fr'],
   },
 })
