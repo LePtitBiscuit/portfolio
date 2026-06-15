@@ -133,8 +133,16 @@
               "Interface plus adaptée aux utilisateurs",
               "Base plus évolutive"
             ],
-            "visuals": ["Avant / après architecture", "Capture interface améliorée"],
-            "images": []
+            "images": [
+              {
+                "src": "public/images/skills/realiser/AC31.02/old_archi.png",
+                "description": "Architecture avant refonte"
+              },
+              {
+                "src": "public/images/skills/realiser/AC31.02/new_archi.png",
+                "description": "Architecture après refonte"
+              }
+            ]
           },
           {
             "code": "AC31.03",
@@ -779,8 +787,11 @@
               "Suivi efficace de l'avancement",
               "Transmission des informations facilitée"
             ],
-            "visuals": ["Organisation équipes", "Planning", "Discord / outils de communication"],
-            "images": []
+            "images": [
+              {
+                "src": "public/images/skills/collaborer/AC36.04/discord.png"
+              }
+            ]
           }
         ]
       }
