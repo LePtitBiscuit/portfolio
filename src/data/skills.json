@@ -1,0 +1,785 @@
+[
+  {
+    "title": "Réaliser",
+    "description": "Développer une solution informatique en concevant, codant, testant et intégrant une application qui répond à des besoins utilisateurs réels.",
+    "icon": "M7 8 3 12l4 4M17 8l4 4-4 4M14 4l-4 16",
+    "levels": [
+      {
+        "name": "Niveau 1",
+        "description": "Développer des applications simples en respectant les besoins exprimés et les bases de la qualité de code.",
+        "critical_learnings": [
+          {
+            "code": "AC11.01",
+            "title": "Analyser un besoin utilisateur",
+            "description": "Identifier les fonctionnalités attendues, les contraintes et les critères de réussite avant de coder.",
+            "main_points": [
+              "Recueillir les exigences fonctionnelles et non fonctionnelles",
+              "Définir les critères d'acceptation",
+              "Identifier les cas limites et scénarios d'erreur",
+              "Prioriser les fonctionnalités selon la valeur apportée"
+            ],
+            "project_context": "Appliqué lors de la conception d'une application de gestion pour l'IUT de Martinique. J'ai mené des entretiens avec les futurs utilisateurs pour cerner leurs attentes avant toute ligne de code.",
+            "images": []
+          },
+          {
+            "code": "AC11.02",
+            "title": "Concevoir une solution simple",
+            "description": "Découper un besoin en modules compréhensibles et choisir une structure technique adaptée.",
+            "main_points": [
+              "Décomposer le problème en sous-problèmes indépendants",
+              "Choisir les patterns architecturaux adaptés",
+              "Produire des diagrammes clairs avant l'implémentation",
+              "Valider l'architecture avec les parties prenantes"
+            ],
+            "project_context": "Lors d'un projet de développement web en équipe, j'ai défini l'architecture MVC avant le début du sprint, ce qui a évité plusieurs refactorisations coûteuses en cours de route.",
+            "images": []
+          },
+          {
+            "code": "AC11.03",
+            "title": "Coder proprement",
+            "description": "Produire un code lisible, typé, documenté et facile à maintenir.",
+            "main_points": [
+              "Respecter les conventions de nommage et de formatage",
+              "Écrire des fonctions courtes à responsabilité unique",
+              "Documenter les parties non-triviales",
+              "Éviter la duplication de logique (principe DRY)"
+            ],
+            "project_context": "Dans tous mes projets, j'applique systématiquement les règles de clean code. Sur ce portfolio, chaque composant Vue a une responsabilité unique et le TypeScript strict est activé.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 2",
+        "description": "Réaliser une application complète avec intégration, tests, documentation et attention portée à l'expérience utilisateur.",
+        "critical_learnings": [
+          {
+            "code": "AC21.01",
+            "title": "Intégrer les composants",
+            "description": "Assembler interface, logique métier, base de données et services pour livrer une application cohérente.",
+            "main_points": [
+              "Connecter les couches frontend, backend et base de données",
+              "Gérer les états et les flux de données entre composants",
+              "Assurer la cohérence des interfaces entre services",
+              "Tester les points d'intégration"
+            ],
+            "project_context": "Développé une application fullstack Vue.js + Node.js + PostgreSQL où j'ai géré l'intégration complète : API REST, gestion des tokens JWT et synchronisation des états côté client.",
+            "images": []
+          },
+          {
+            "code": "AC21.02",
+            "title": "Tester les fonctionnalités",
+            "description": "Vérifier les comportements importants pour fiabiliser l'application et limiter les régressions.",
+            "main_points": [
+              "Écrire des tests unitaires sur la logique métier",
+              "Mettre en place des tests d'intégration sur les APIs",
+              "Automatiser les tests dans une pipeline CI",
+              "Analyser et maintenir la couverture de code"
+            ],
+            "project_context": "Sur un projet de gestion d'inventaire, j'ai mis en place une suite de tests unitaires avec Vitest et des tests d'intégration automatisés dans une pipeline GitLab CI.",
+            "images": []
+          },
+          {
+            "code": "AC21.03",
+            "title": "Documenter le projet",
+            "description": "Rendre la solution compréhensible pour faciliter son évolution et sa reprise.",
+            "main_points": [
+              "Rédiger un README clair avec instructions d'installation",
+              "Documenter les APIs avec des exemples concrets",
+              "Expliquer les décisions d'architecture importantes",
+              "Maintenir un CHANGELOG des évolutions"
+            ],
+            "project_context": "Sur chaque projet de groupe, j'ai pris l'habitude de rédiger une documentation technique incluant diagrammes, choix d'architecture et guide d'installation, utilisée ensuite lors des soutenances.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 3",
+        "description": "Adapter des applications sur différents environnements (web, mobile, systèmes).",
+        "critical_learnings": [
+          {
+            "code": "AC31.01",
+            "title": "Choisir et implémenter les architectures adaptées",
+            "description": "Concevoir une architecture technique adaptée aux besoins d'une organisation en prenant en compte les contraintes fonctionnelles, techniques et de maintenance.",
+            "main_points": [],
+            "project_context": "Lors du développement d'une application de suivi des dossiers clients pour Feeling Car, j'ai d'abord conçu un prototype basé sur une architecture classique avec Vue.js, Express.js et MySQL. L'analyse du besoin a ensuite montré que cette solution pouvait être simplifiée et rendue plus adaptée au fonctionnement de l'entreprise. L'architecture a évolué vers une solution combinant Airtable pour la gestion des données, n8n pour l'automatisation des processus et des API REST pour les échanges.",
+            "impact": [
+              "Architecture plus adaptée aux besoins métier",
+              "Maintenance simplifiée",
+              "Réduction de la complexité technique",
+              "Meilleure évolutivité de la solution"
+            ],
+            "visuals": [
+              "Schéma architecture initiale",
+              "Schéma architecture finale",
+              "Capture workflow n8n"
+            ],
+            "images": []
+          },
+          {
+            "code": "AC31.02",
+            "title": "Faire évoluer une application existante",
+            "description": "Analyser une application existante afin d'identifier ses limites et proposer des améliorations sans repartir de zéro.",
+            "main_points": [],
+            "project_context": "Sur le projet The Camp MMI, j'ai repris une application web existante afin d'analyser son fonctionnement. L'objectif était d'améliorer sa structure, ses performances et sa maintenabilité. L'analyse a révélé plusieurs problèmes : duplication de code, manque de séparation des responsabilités, organisation difficile à maintenir, problèmes d'adaptation mobile. J'ai proposé une refonte progressive avec une meilleure organisation du code.",
+            "impact": [
+              "Code plus maintenable",
+              "Meilleure organisation du projet",
+              "Interface plus adaptée aux utilisateurs",
+              "Base plus évolutive"
+            ],
+            "visuals": ["Avant / après architecture", "Capture interface améliorée"],
+            "images": []
+          },
+          {
+            "code": "AC31.03",
+            "title": "Intégrer des solutions dans un environnement de production",
+            "description": "Déployer une solution informatique afin qu'elle soit réellement utilisable par des utilisateurs finaux.",
+            "main_points": [],
+            "project_context": "Chez Feeling Car, j’ai développé des tableaux de bord financiers intégrés dans l’environnement Airtable existant. J’ai créé les interfaces de suivi, structuré les données et adapté les automatisations n8n afin d’ajouter ces fonctionnalités sans perturber les outils déjà en production.",
+            "impact": [
+              "Passage d'un prototype à un outil utilisé quotidiennement",
+              "Automatisation de tâches répétitives",
+              "Meilleure circulation des informations"
+            ],
+            "images": [
+              {
+                "src": "public/images/skills/realiser/AC31.03/airtable_edit_interfaces.png",
+                "description": "Interface d'ajout des nouvelles interfaces"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Optimiser",
+    "description": "Analyser des solutions informatiques, choisir des structures de données pertinentes et améliorer performance, robustesse et sécurité du code.",
+    "icon": "M4 13a8 8 0 0 1 14.9-4M20 11a8 8 0 0 1-14.9 4M12 3v4M12 17v4M3 12h4M17 12h4",
+    "levels": [
+      {
+        "name": "Niveau 1",
+        "description": "Comprendre les bases algorithmiques et comparer des solutions simples.",
+        "critical_learnings": [
+          {
+            "code": "AC12.01",
+            "title": "Choisir un algorithme adapté",
+            "description": "Sélectionner une approche algorithmique en fonction du problème posé et justifier ses choix.",
+            "main_points": [
+              "Analyser la complexité temporelle et spatiale",
+              "Comparer plusieurs approches avant d'implémenter",
+              "Choisir selon les contraintes de volume et de performance",
+              "Savoir quand un algorithme simple suffit"
+            ],
+            "project_context": "Dans un exercice d'algorithmique sur des graphes, j'ai comparé BFS et Dijkstra pour un problème de plus court chemin, choisissant BFS pour sa simplicité sur des graphes non pondérés.",
+            "images": []
+          },
+          {
+            "code": "AC12.02",
+            "title": "Manipuler les structures de données",
+            "description": "Utiliser tableaux, collections et objets pour représenter efficacement l'information.",
+            "main_points": [
+              "Connaître les performances des structures courantes",
+              "Choisir entre liste, dictionnaire, ensemble selon l'usage",
+              "Éviter les copies inutiles de structures volumineuses",
+              "Exploiter les structures immutables quand c'est pertinent"
+            ],
+            "project_context": "Lors du développement d'une API REST en Python, j'ai optimisé les recherches fréquentes en utilisant des dictionnaires indexés plutôt que des listes, réduisant la complexité de O(n) à O(1).",
+            "images": []
+          },
+          {
+            "code": "AC12.03",
+            "title": "Mesurer et comparer des solutions",
+            "description": "Observer temps d'exécution, lisibilité et contraintes pour comparer plusieurs implémentations.",
+            "main_points": [
+              "Profiler le code pour identifier les parties lentes",
+              "Mesurer avant et après optimisation",
+              "Ne pas optimiser prématurément",
+              "Documenter les benchmarks réalisés"
+            ],
+            "project_context": "Sur un projet de traitement de données, j'ai mesuré les performances de plusieurs implémentations en Python avant de choisir la solution finale, en justifiant le choix par des données concrètes.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 2",
+        "description": "Optimiser une solution en tenant compte des performances, de la sécurité et de la maintenabilité.",
+        "critical_learnings": [
+          {
+            "code": "AC22.01",
+            "title": "Réduire la complexité",
+            "description": "Identifier les traitements coûteux et proposer des alternatives plus efficaces.",
+            "main_points": [
+              "Remplacer les boucles imbriquées par des structures adaptées",
+              "Utiliser la mémoïsation pour les calculs répétitifs",
+              "Lazy-loader les données non immédiatement nécessaires",
+              "Mettre en cache les résultats coûteux"
+            ],
+            "project_context": "Dans une application de visualisation de données, j'ai remplacé un calcul recalculé à chaque rendu par un computed Vue mis en cache, éliminant des re-renders inutiles.",
+            "images": []
+          },
+          {
+            "code": "AC22.02",
+            "title": "Sécuriser le code",
+            "description": "Limiter les entrées dangereuses, erreurs prévisibles et comportements non maîtrisés.",
+            "main_points": [
+              "Valider et assainir toutes les entrées utilisateur",
+              "Ne jamais exposer d'informations sensibles dans les erreurs",
+              "Gérer les cas d'erreur de manière explicite",
+              "Appliquer le principe du moindre privilège"
+            ],
+            "project_context": "Sur une API développée en Node.js, j'ai mis en place une validation stricte des inputs avec Zod, ajouté des limites de taux et masqué les détails d'erreur en production.",
+            "images": []
+          },
+          {
+            "code": "AC22.03",
+            "title": "Améliorer la qualité du code",
+            "description": "Refactoriser progressivement pour obtenir une base plus claire et évolutive.",
+            "main_points": [
+              "Identifier les code smells et les traiter méthodiquement",
+              "Refactoriser en maintenant les tests au vert",
+              "Extraire les duplications en abstractions réutilisables",
+              "Simplifier les fonctions trop longues ou complexes"
+            ],
+            "project_context": "Lors d'une revue de code en groupe, j'ai identifié et factorisé plusieurs blocs dupliqués dans un contrôleur PHP, réduisant le fichier de 400 à 180 lignes sans perte de fonctionnalité.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 3",
+        "description": "Analyser et améliorer les performances des applications.",
+        "critical_learnings": [
+          {
+            "code": "AC32.01",
+            "title": "Anticiper les performances d'une solution",
+            "description": "Analyser le comportement d'une application afin d'identifier les limites et améliorer ses performances.",
+            "main_points": [],
+            "project_context": "Lors de l'optimisation de workflows financiers avec n8n chez Feeling Car, j'ai étudié les temps d'exécution des traitements afin d'identifier les ralentissements. L'analyse a montré que certaines opérations Airtable limitaient les performances. J'ai remplacé certaines actions par des appels API et des traitements optimisés.",
+            "impact": [
+              "Workflows plus rapides",
+              "Meilleure gestion des volumes de données",
+              "Automatisations plus fiables"
+            ],
+            "images": [
+              {
+                "src": "/images/skills/optimiser/AC32.01/workflow.png",
+                "description": "Workflow n8n complet — vue d'ensemble des traitements financiers automatisés"
+              },
+              {
+                "src": "/images/skills/optimiser/AC32.01/http_node.png",
+                "description": "Nœud HTTP — remplacement des actions Airtable par des appels API directs"
+              }
+            ]
+          },
+          {
+            "code": "AC32.02",
+            "title": "Analyser et améliorer un code existant",
+            "description": "Comprendre un projet existant, identifier ses faiblesses et proposer des améliorations techniques.",
+            "main_points": [],
+            "project_context": "Pendant l'audit du projet The Camp MMI, j'ai particpéré à l'étude du code afin d'identifier les problèmes liés à la structure du projet. Les principales améliorations concernaient : organisation des fichiers, suppression des duplications, séparation des responsabilités, amélioration de la maintenabilité.",
+            "impact": [
+              "Projet plus maintenable",
+              "Évolutions facilitées",
+              "Meilleure qualité du code"
+            ],
+            "visuals": ["Organisation avant/après", "Extrait architecture"],
+            "images": []
+          },
+          {
+            "code": "AC32.03",
+            "title": "Choisir des outils adaptés au problème",
+            "description": "Sélectionner les technologies et bibliothèques adaptées pour répondre efficacement à un besoin.",
+            "main_points": [],
+            "project_context": "Pour fiabiliser les données de stock de Feeling Car, j'ai travaillé sur des fichiers Excel non structurés. J'ai utilisé Python et Pandas afin de nettoyer les données, supprimer les doublons, normaliser les informations et préparer leur intégration dans Airtable.",
+            "impact": [
+              "Données plus fiables",
+              "Import automatisé facilité",
+              "Réduction des erreurs humaines"
+            ],
+            "visuals": ["Script Python", "Exemple données avant/après"],
+            "images": [
+              {
+                "src": "/images/skills/optimiser/AC32.01/workflow.png",
+                "description": "Workflow n8n complet — vue d'ensemble des traitements financiers automatisés"
+              },
+              {
+                "src": "/images/skills/optimiser/AC32.01/http_node.png",
+                "description": "Nœud HTTP — remplacement des actions Airtable par des appels API directs"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Administrer",
+    "description": "Installer, configurer, déployer et sécuriser des services, systèmes et réseaux nécessaires au fonctionnement d'une solution.",
+    "icon": "M6 18h12M8 18V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10M7 10h10M9 14h.01M12 14h.01M15 14h.01",
+    "levels": [
+      {
+        "name": "Niveau 1",
+        "description": "Comprendre l'environnement système et configurer des services de base.",
+        "critical_learnings": [
+          {
+            "code": "AC13.01",
+            "title": "Installer un environnement de développement",
+            "description": "Préparer les outils, systèmes et dépendances nécessaires au développement d'une application.",
+            "main_points": [
+              "Configurer un environnement Linux fonctionnel",
+              "Gérer les versions d'outils avec des gestionnaires dédiés",
+              "Isoler les environnements de projet",
+              "Automatiser la mise en place avec des scripts"
+            ],
+            "project_context": "J'utilise Fedora Linux comme OS principal avec une configuration personnalisée de Hyprland. Chaque projet dispose de son propre environnement isolé, géré via Docker ou des environnements virtuels Python.",
+            "images": []
+          },
+          {
+            "code": "AC13.02",
+            "title": "Configurer et démarrer un service",
+            "description": "Mettre en place un service simple, vérifier son fonctionnement et assurer sa disponibilité.",
+            "main_points": [
+              "Comprendre la configuration d'un serveur web (Nginx, Apache)",
+              "Gérer les processus avec systemd",
+              "Configurer les variables d'environnement",
+              "Vérifier les logs pour diagnostiquer"
+            ],
+            "project_context": "Dans le cadre d'un projet de déploiement, j'ai configuré un serveur Nginx pour servir une application Vue.js et une API Node.js, avec gestion des headers de sécurité et du HTTPS.",
+            "images": []
+          },
+          {
+            "code": "AC13.03",
+            "title": "Comprendre les réseaux",
+            "description": "Identifier les flux, ports et protocoles utilisés par une application déployée.",
+            "main_points": [
+              "Connaître les protocoles HTTP, HTTPS, TCP/UDP",
+              "Comprendre le routage et les DNS",
+              "Configurer des règles de pare-feu basiques",
+              "Diagnostiquer avec ping, curl, netstat"
+            ],
+            "project_context": "Sur Proxmox, j'ai configuré des réseaux virtuels pour isoler les conteneurs LXC, défini des règles iptables et mis en place des VLANs pour séparer les environnements de dev et de prod.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 2",
+        "description": "Déployer et superviser des environnements techniques fiables.",
+        "critical_learnings": [
+          {
+            "code": "AC23.01",
+            "title": "Déployer une application",
+            "description": "Publier une solution sur un environnement serveur avec une configuration sécurisée et adaptée.",
+            "main_points": [
+              "Automatiser le déploiement avec des pipelines CI/CD",
+              "Gérer les variables sensibles hors du code source",
+              "Mettre en place des stratégies de déploiement sans interruption",
+              "Vérifier le bon fonctionnement après chaque déploiement"
+            ],
+            "project_context": "J'ai mis en place une pipeline GitLab CI/CD complète pour un projet PHP : build, tests automatisés, lint, puis déploiement automatique sur le serveur via SSH à chaque merge sur main.",
+            "images": []
+          },
+          {
+            "code": "AC23.02",
+            "title": "Conteneuriser un service",
+            "description": "Utiliser des conteneurs pour rendre l'exécution reproductible, portable et isolée.",
+            "main_points": [
+              "Écrire des Dockerfiles optimisés et sécurisés",
+              "Orchestrer plusieurs services avec Docker Compose",
+              "Gérer les volumes et la persistance des données",
+              "Optimiser les images pour réduire leur taille"
+            ],
+            "project_context": "Plusieurs de mes projets sont entièrement conteneurisés avec Docker Compose : base de données, backend, frontend et proxy Nginx, avec un seul docker compose up pour tout lancer.",
+            "images": []
+          },
+          {
+            "code": "AC23.03",
+            "title": "Observer l'exploitation",
+            "description": "Suivre l'état des services en production et diagnostiquer les incidents courants.",
+            "main_points": [
+              "Lire et analyser les logs système et applicatifs",
+              "Surveiller les métriques clés (CPU, mémoire, requêtes)",
+              "Configurer des alertes sur les seuils critiques",
+              "Documenter les incidents et leurs résolutions"
+            ],
+            "project_context": "Sur mon infrastructure Proxmox personnelle, j'ai configuré la collecte de logs centralisée et des alertes par notification pour détecter les services défaillants avant qu'ils impactent les utilisateurs.",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gérer",
+    "description": "Concevoir, modéliser, exploiter et sécuriser des bases de données pour transformer les données en information fiable.",
+    "icon": "M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3ZM4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6",
+    "levels": [
+      {
+        "name": "Niveau 1",
+        "description": "Modéliser les données et manipuler une base relationnelle simple.",
+        "critical_learnings": [
+          {
+            "code": "AC14.01",
+            "title": "Modéliser l'information",
+            "description": "Identifier les entités, relations et contraintes d'un domaine métier pour concevoir un schéma de données.",
+            "main_points": [
+              "Construire un diagramme entité-relation",
+              "Identifier les cardinalités et dépendances",
+              "Normaliser le schéma pour éviter les redondances",
+              "Valider le modèle avec les règles métier"
+            ],
+            "project_context": "Pour un projet de gestion d'événements culturels en Martinique, j'ai conçu le modèle de données en partant des règles métier : artistes, événements, lieux, réservations et contraintes de disponibilité.",
+            "images": []
+          },
+          {
+            "code": "AC14.02",
+            "title": "Interroger une base de données",
+            "description": "Écrire des requêtes SQL pour créer, lire, modifier et exploiter les données efficacement.",
+            "main_points": [
+              "Maîtriser SELECT, INSERT, UPDATE, DELETE",
+              "Utiliser les jointures pour croiser les données",
+              "Agréger et grouper les résultats",
+              "Filtrer et trier efficacement"
+            ],
+            "project_context": "Dans plusieurs projets utilisant PostgreSQL et MariaDB, j'ai écrit des requêtes complexes avec jointures multiples, sous-requêtes et fonctions d'agrégation pour générer des rapports et des tableaux de bord.",
+            "images": []
+          },
+          {
+            "code": "AC14.03",
+            "title": "Garantir la cohérence des données",
+            "description": "Utiliser les contraintes, clés et relations pour maintenir des données intègres et fiables.",
+            "main_points": [
+              "Définir les clés primaires et étrangères",
+              "Ajouter des contraintes de validation",
+              "Utiliser les transactions pour les opérations critiques",
+              "Gérer les suppressions en cascade"
+            ],
+            "project_context": "Sur un projet avec des données critiques (réservations et paiements), j'ai mis en place des transactions SQL et des contraintes d'intégrité qui ont permis d'éviter des incohérences lors de pannes réseau.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 2",
+        "description": "Concevoir une base structurée et l'intégrer dans une application.",
+        "critical_learnings": [
+          {
+            "code": "AC24.01",
+            "title": "Concevoir un schéma robuste",
+            "description": "Créer une structure de base de données adaptée aux besoins d'exploitation et aux évolutions futures.",
+            "main_points": [
+              "Anticiper les évolutions du schéma dès la conception",
+              "Choisir les types de données appropriés",
+              "Indexer les colonnes fréquemment interrogées",
+              "Prévoir la gestion des données historiques"
+            ],
+            "project_context": "Avec Prisma sur un projet Node.js, j'ai conçu un schéma évolutif en utilisant les migrations pour faire évoluer la base sans perte de données, avec une stratégie d'indexation réfléchie.",
+            "images": []
+          },
+          {
+            "code": "AC24.02",
+            "title": "Connecter application et données",
+            "description": "Relier le backend, les APIs ou l'interface à une base de données de manière sécurisée et maîtrisée.",
+            "main_points": [
+              "Utiliser un ORM pour abstraire les requêtes",
+              "Gérer le pooling des connexions",
+              "Séparer la logique d'accès aux données",
+              "Gérer les erreurs de base de données explicitement"
+            ],
+            "project_context": "J'utilise Prisma ORM dans mes projets TypeScript pour bénéficier d'un typage fort jusqu'à la base de données, ce qui a permis d'éviter de nombreuses erreurs de type à la compilation.",
+            "images": []
+          },
+          {
+            "code": "AC24.03",
+            "title": "Sécuriser les accès aux données",
+            "description": "Contrôler les droits et protéger les données contre les accès non autorisés et les injections.",
+            "main_points": [
+              "Utiliser des requêtes préparées pour éviter les injections",
+              "Définir des rôles et permissions par profil utilisateur",
+              "Chiffrer les données sensibles au repos",
+              "Auditer les accès aux données critiques"
+            ],
+            "project_context": "Dans une API REST, j'ai mis en place une gestion des rôles côté base de données (admin, user, guest) avec des vues PostgreSQL pour limiter l'exposition des données sensibles selon le profil.",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Conduire",
+    "description": "Piloter un projet informatique en analysant les besoins, organisant le travail et communiquant efficacement avec toutes les parties prenantes.",
+    "icon": "M9 6h11M9 12h11M9 18h11M5 6h.01M5 12h.01M5 18h.01",
+    "levels": [
+      {
+        "name": "Niveau 1",
+        "description": "Comprendre un besoin et organiser les premières étapes d'un projet.",
+        "critical_learnings": [
+          {
+            "code": "AC15.01",
+            "title": "Recueillir les besoins",
+            "description": "Identifier les attentes, contraintes et priorités du projet en dialoguant avec les parties prenantes.",
+            "main_points": [
+              "Conduire des entretiens structurés avec les clients",
+              "Distinguer besoins exprimés et besoins réels",
+              "Formaliser les exigences de manière exploitable",
+              "Prioriser selon la valeur et les contraintes"
+            ],
+            "project_context": "Lors d'un projet de digitalisation pour une association martiniquaise, j'ai animé des ateliers de recueil des besoins qui ont révélé des attentes non exprimées initialement, orientant significativement les choix techniques.",
+            "images": []
+          },
+          {
+            "code": "AC15.02",
+            "title": "Planifier les tâches",
+            "description": "Découper le travail en étapes claires, réalistes et assignables.",
+            "main_points": [
+              "Décomposer en user stories ou tâches atomiques",
+              "Estimer les charges réalistement",
+              "Identifier les dépendances entre tâches",
+              "Définir un chemin critique"
+            ],
+            "project_context": "En tant que chef de projet sur un sprint de 2 semaines, j'ai structuré le backlog en user stories, estimé les charges en points d'effort et planifié les itérations en tenant compte des disponibilités de chacun.",
+            "images": []
+          },
+          {
+            "code": "AC15.03",
+            "title": "Communiquer l'avancement",
+            "description": "Partager l'état du projet de manière concise et utile à chaque partie prenante.",
+            "main_points": [
+              "Adapter le niveau de détail selon l'audience",
+              "Rendre visible les blocages rapidement",
+              "Mettre à jour les outils de suivi régulièrement",
+              "Documenter les décisions importantes"
+            ],
+            "project_context": "Dans un projet de groupe, j'ai mis en place des daily standups et un tableau Kanban sur GitLab qui ont permis d'identifier et de résoudre rapidement deux blocages techniques avant qu'ils impactent les délais.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 2",
+        "description": "Appliquer une démarche projet structurée et adapter l'organisation aux contraintes.",
+        "critical_learnings": [
+          {
+            "code": "AC25.01",
+            "title": "Formaliser une solution",
+            "description": "Transformer les besoins en spécifications compréhensibles et exploitables par toute l'équipe.",
+            "main_points": [
+              "Rédiger des spécifications fonctionnelles claires",
+              "Créer des maquettes pour valider avec le client",
+              "Définir les critères d'acceptation précis",
+              "Faire valider les spécifications avant de coder"
+            ],
+            "project_context": "Avant le développement d'une application de gestion, j'ai produit des maquettes Figma validées par le client et des spécifications fonctionnelles qui ont servi de référence tout au long du projet.",
+            "images": []
+          },
+          {
+            "code": "AC25.02",
+            "title": "Appliquer les méthodes agiles",
+            "description": "Prioriser, itérer et ajuster le projet selon les retours pour livrer de la valeur en continu.",
+            "main_points": [
+              "Organiser le travail en sprints courts",
+              "Tenir des rétrospectives pour améliorer le processus",
+              "Ajuster les priorités selon les retours utilisateurs",
+              "Livrer des incréments fonctionnels à chaque sprint"
+            ],
+            "project_context": "Sur un projet de 4 mois avec des sprints de 2 semaines, j'ai facilité les cérémonies Scrum et adapté le backlog à chaque sprint review en intégrant les retours du client, ce qui a conduit à 3 pivots mineurs mais importants.",
+            "images": []
+          },
+          {
+            "code": "AC25.03",
+            "title": "Gérer les risques",
+            "description": "Anticiper les blocages potentiels et proposer des actions correctives avant qu'ils surviennent.",
+            "main_points": [
+              "Identifier les risques en début de projet",
+              "Évaluer leur probabilité et leur impact",
+              "Définir des plans de mitigation",
+              "Surveiller les risques tout au long du projet"
+            ],
+            "project_context": "Sur un projet avec une forte dépendance à une API tierce, j'ai anticipé son indisponibilité en développant un mode dégradé avec des données cached, ce qui s'est avéré utile lors d'une panne réelle en production.",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Collaborer",
+    "description": "Travailler efficacement en équipe, communiquer techniquement, s'organiser et maintenir une veille pour progresser continuellement.",
+    "icon": "M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3ZM8 13c1.7 0 3-1.3 3-3S9.7 7 8 7s-3 1.3-3 3 1.3 3 3 3ZM16 14c-2.7 0-5 1.3-5 3v2h10v-2c0-1.7-2.3-3-5-3ZM8 16c-2.7 0-5 1.3-5 3v1h6",
+    "levels": [
+      {
+        "name": "Niveau 1",
+        "description": "S'intégrer dans une équipe et partager clairement son travail.",
+        "critical_learnings": [
+          {
+            "code": "AC16.01",
+            "title": "Travailler en équipe efficacement",
+            "description": "Contribuer à un objectif commun en s'intégrant dans les rôles et les processus de l'équipe.",
+            "main_points": [
+              "Clarifier son rôle et ses responsabilités",
+              "Respecter les engagements pris envers l'équipe",
+              "Demander de l'aide rapidement en cas de blocage",
+              "Contribuer à une bonne dynamique collective"
+            ],
+            "project_context": "Dans chaque projet de groupe, je prends soin de définir clairement ma contribution dès le début pour éviter les chevauchements, tout en restant disponible pour aider les autres membres quand ils sont bloqués.",
+            "images": []
+          },
+          {
+            "code": "AC16.02",
+            "title": "Utiliser des outils collaboratifs",
+            "description": "Partager code, documents et décisions dans des espaces communs accessibles à toute l'équipe.",
+            "main_points": [
+              "Utiliser Git et GitLab pour le versionnement du code",
+              "Écrire des messages de commit clairs et informatifs",
+              "Utiliser les merge requests pour faire relire le code",
+              "Documenter les décisions dans des espaces partagés"
+            ],
+            "project_context": "Tous mes projets de groupe utilisent GitLab avec une convention de branches (feature/, fix/, hotfix/) et des merge requests systématiques avec revue de code, même pour les petites modifications.",
+            "images": []
+          },
+          {
+            "code": "AC16.03",
+            "title": "Communiquer techniquement",
+            "description": "Expliquer ses choix, ses difficultés et ses solutions avec précision et clarté.",
+            "main_points": [
+              "Adapter le niveau technique à l'interlocuteur",
+              "Documenter les décisions prises et leur justification",
+              "Signaler les problèmes avec des informations suffisantes",
+              "Demander du feedback sur son travail"
+            ],
+            "project_context": "Dans les revues de code, je prends le temps d'expliquer mes choix d'implémentation dans les commentaires de merge request, ce qui accélère les revues et facilite la compréhension collective.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 2",
+        "description": "Structurer la collaboration pour produire une solution de qualité collective.",
+        "critical_learnings": [
+          {
+            "code": "AC26.01",
+            "title": "Organiser les contributions",
+            "description": "Répartir les responsabilités et rendre le travail de chacun visible et intégrable.",
+            "main_points": [
+              "Définir des interfaces claires entre les parties du code",
+              "Synchroniser régulièrement pour détecter les conflits tôt",
+              "Utiliser des outils de suivi pour la visibilité collective",
+              "Éviter les silos de connaissance"
+            ],
+            "project_context": "Sur un projet à cinq personnes, j'ai proposé une organisation en feature teams avec des points de synchronisation quotidiens, ce qui a permis de réduire les conflits Git et d'éviter les dépendances bloquantes.",
+            "images": []
+          },
+          {
+            "code": "AC26.02",
+            "title": "Participer aux revues de code",
+            "description": "Relire et améliorer le code des autres de manière constructive pour renforcer la qualité collective.",
+            "main_points": [
+              "Donner des retours constructifs et précis",
+              "Distinguer les suggestions des blocages",
+              "Partager ses connaissances via les revues",
+              "Accepter les retours avec ouverture"
+            ],
+            "project_context": "Je pratique la revue de code systématique dans mes projets de groupe. J'ai appris à formuler des suggestions plutôt que des critiques, ce qui a amélioré la réceptivité de mes collègues et la qualité finale du code.",
+            "images": []
+          },
+          {
+            "code": "AC26.03",
+            "title": "Partager la connaissance",
+            "description": "Documenter les décisions et faciliter la montée en compétence de toute l'équipe.",
+            "main_points": [
+              "Écrire des wikis et guides de démarrage clairs",
+              "Organiser des sessions de partage technique",
+              "Éviter de concentrer la connaissance sur une seule personne",
+              "Mettre à jour la documentation lors des changements"
+            ],
+            "project_context": "Après avoir introduit Docker dans un projet de groupe où personne ne le connaissait, j'ai rédigé un guide de démarrage rapide et animé une session de formation qui a permis à toute l'équipe d'être autonome en moins d'une heure.",
+            "images": []
+          }
+        ]
+      },
+      {
+        "name": "Niveau 3",
+        "description": "Accompagner et organiser des projets informatiques.",
+        "critical_learnings": [
+          {
+            "code": "AC36.01",
+            "title": "Organiser une veille technologique",
+            "description": "Rechercher, analyser et partager des informations techniques afin d'orienter les choix d'un projet.",
+            "main_points": [],
+            "project_context": "Pour préparer l'évolution de l'écosystème numérique de Feeling Car, j'ai étudié différentes solutions : outils low-code, plateformes, API, automatisation. J'ai comparé les solutions selon leurs avantages et leurs limites.",
+            "impact": [
+              "Décisions techniques mieux argumentées",
+              "Solutions choisies plus adaptées",
+              "Meilleure vision des possibilités numériques"
+            ],
+            "images": [
+              {
+                "src": "public/images/skills/collaborer/AC36.01/architecture.png",
+                "description": "Documents listant les solutions étudiées"
+              }
+            ]
+          },
+          {
+            "code": "AC36.02",
+            "title": "Comprendre les enjeux de l'innovation numérique",
+            "description": "Identifier comment une solution numérique peut améliorer les processus d'une organisation.",
+            "main_points": [],
+            "project_context": "La gestion du stock de Feeling Car reposait initialement sur des fichiers Excel peu adaptés. J'ai participé à la transformation de ce fonctionnement vers un outil structuré permettant un meilleur suivi des ressources.",
+            "impact": [
+              "Meilleure visibilité sur les stocks",
+              "Réduction des pertes",
+              "Optimisation des décisions"
+            ],
+            "images": [
+              {
+                "src": "public/images/skills/collaborer/AC36.02/old_stock_management_system.png",
+                "description": "Ancien fonctionnement du système de gestion de stock"
+              },
+              {
+                "src": "public/images/skills/collaborer/AC36.02/new_stock_management_system.png",
+                "description": "Nouveau fonctionnement du système de gestion de stock"
+              }
+            ]
+          },
+          {
+            "code": "AC36.03",
+            "title": "Accompagner un changement informatique",
+            "description": "Adapter une solution aux utilisateurs et faciliter son adoption.",
+            "main_points": [],
+            "project_context": "Lors du déploiement des outils numériques chez Feeling Car, j'ai analysé les besoins des différents utilisateurs : atelier, direction, partenaires. Les interfaces ont été pensées pour correspondre aux usages réels.",
+            "impact": [
+              "Adoption facilitée",
+              "Outils plus adaptés",
+              "Meilleure collaboration entre acteurs"
+            ],
+            "images": [
+              {
+                "src": "public/images/skills/collaborer/AC36.03/sotkc_item_modification.png",
+                "description": "Modification d'un item dans le système de gestion de stock"
+              }
+            ]
+          },
+          {
+            "code": "AC36.04",
+            "title": "Accompagner un projet informatique",
+            "description": "Organiser le travail d'une équipe et assurer le suivi d'un projet informatique.",
+            "main_points": [],
+            "project_context": "Lors de l'événement Antilles Cyber Escape, j'ai coordonné plusieurs équipes d'étudiants. J'ai assuré le suivi, la communication et l'accompagnement technique.",
+            "impact": [
+              "Meilleure coordination des équipes",
+              "Suivi efficace de l'avancement",
+              "Transmission des informations facilitée"
+            ],
+            "visuals": ["Organisation équipes", "Planning", "Discord / outils de communication"],
+            "images": []
+          }
+        ]
+      }
+    ]
+  }
+]
