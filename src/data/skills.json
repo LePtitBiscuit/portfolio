@@ -110,12 +110,16 @@
               "Réduction de la complexité technique",
               "Meilleure évolutivité de la solution"
             ],
-            "visuals": [
-              "Schéma architecture initiale",
-              "Schéma architecture finale",
-              "Capture workflow n8n"
-            ],
-            "images": []
+            "images": [
+              {
+                "src": "public/images/skills/realiser/AC31.01/nodejs_architecture.png",
+                "description": "Schéma architecture Node.js"
+              },
+              {
+                "src": "public/images/skills/realiser/AC31.01/airtable_architecture.png",
+                "description": "Schéma architecture Airtable"
+              }
+            ]
           },
           {
             "code": "AC31.02",
